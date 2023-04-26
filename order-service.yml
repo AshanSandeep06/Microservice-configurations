@@ -16,9 +16,9 @@ spring:
     show-sql: true
     generate-ddl: true
 
-  #this is for config server client
-  config:
-    import: optional:configserver:http://localhost:8085/
+#  #this is for config server client
+#  config:
+#    import: optional:configserver:http://localhost:8085/
 
 server:
   port: 8083

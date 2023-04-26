@@ -4,9 +4,9 @@ server:
 spring:
   application:
     name: api-gateway
-  #this is for config server client
-  config:
-    import: optional:configserver:http://localhost:8085/
+#  #this is for config server client
+#  config:
+#    import: optional:configserver:http://localhost:8085/
   cloud:
     gateway:
       routes:
