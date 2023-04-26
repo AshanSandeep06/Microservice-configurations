@@ -15,6 +15,7 @@ spring:
     generate-ddl: true
     show-sql: true
 
+# Meka comment krla thiyanna github eke natthanm recursive wela wada krnne nathi case ekk enwa.
 #  #this is for config server client
 #  config:
 #    import: optional:configserver:http://localhost:8085/
