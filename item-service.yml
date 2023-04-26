@@ -1,11 +1,16 @@
 spring:
   application:
     name: item-service
+
+  #this is for config server client
+  config:
+    import: optional:configserver:http://localhost:8085/
+
 #data source
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
     url: jdbc:mysql://localhost:3306/ItemManage?createDatabaseIfNotExist=true
-    password: sanu
+    password: 1234
     username: root
 #jpa
   jpa:

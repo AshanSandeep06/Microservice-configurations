@@ -5,6 +5,15 @@ spring:
   application:
     name: config-server
 
+  #this is for config server to allocate where we put configuration on GitHub - location
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/GDSE-59-60-Project-Zone/Microservice-Configurations.git
+        #          ape computer eke folder ekaka location ekk unath denna puluwn. - Recommended na but puluwn.
+        default-label: master
+
 #this is for eureka client
 eureka:
   client:

@@ -2,18 +2,22 @@
 spring:
   datasource:
     username: root
-    password: sanu
+    password: 1234
     driver-class-name: com.mysql.jdbc.Driver
     url: jdbc:mysql://localhost:3306/CustomerManage?createDatabaseIfNotExist=true
-#this is for application name
+  #this is for application name
   application:
     name: customer-service
-#this is for jpa
+  #this is for jpa
   jpa:
     database: mysql
     database-platform: org.hibernate.dialect.MySQL57Dialect
     generate-ddl: true
     show-sql: true
+
+  #this is for config server client
+  config:
+    import: optional:configserver:http://localhost:8085/
 
 server:
   port: 8081

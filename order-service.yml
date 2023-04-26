@@ -2,19 +2,23 @@ spring:
   application:
     name: order-service
 
-#data source
+  #data source
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
     username: root
-    password: sanu
+    password: 1234
     url: jdbc:mysql://localhost:3306/OrderManage?createDatabaseIfNotExist=true
 
-#Jpa
+  #Jpa
   jpa:
     database: mysql
     database-platform: org.hibernate.dialect.MySQL57Dialect
     show-sql: true
     generate-ddl: true
+
+  #this is for config server client
+  config:
+    import: optional:configserver:http://localhost:8085/
 
 server:
   port: 8083
