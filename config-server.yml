@@ -5,13 +5,13 @@ spring:
   application:
     name: config-server
 
-  #this is for config server to allocate where we put configuration on GitHub - location
-  cloud:
-    config:
-      server:
-        git:
-          uri: https://github.com/AshanSandeep06/Microservice-configurations.git
-        default-label: master
+#  #this is for config server to allocate where we put configuration on GitHub - location
+#  cloud:
+#    config:
+#      server:
+#        git:
+#          uri: https://github.com/AshanSandeep06/Microservice-configurations.git
+#        default-label: master
 
 #this is for eureka client
 eureka:
